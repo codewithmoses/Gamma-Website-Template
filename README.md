@@ -61,11 +61,13 @@ The Gamma Website Template is built using the following tools and resources:
 2. **Font Awesome**
    - **CDN:**
      ```html
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
      ```
    - Font Awesome icons are used throughout the website to enhance its visual appeal and user experience.
 
-3. **Google Fonts (Imprima)**
+3. **Google Fonts (Cinzel Decorative, Cinzel, 
+Nunito Sans)**
    - **CDN:**
      ```html
      <link href="https://fonts.googleapis.com/css2?family=Imprima&display=swap" rel="stylesheet" />
