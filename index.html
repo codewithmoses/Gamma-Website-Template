@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Your page description here" />
+    <meta name="keywords" content="Tailwind CSS, HTML, SEO, Template" />
+    <meta name="author" content="Your Name" />
+    <meta name="robots" content="index, follow" />
+
+    <title>Your Page Title</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://unpkg.com/tailwindcss-cdn@3.4.3/tailwindcss.js"></script>
+    <script src="https://unpkg.com/tailwindcss-cdn@3.4.3/tailwindcss-with-all-plugins.js"></script>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts: Imprima Static  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Custom CSS for using the Montserrat font */
+      .nunito {
+        font-family: "Nunito Sans", sans-serif;
+      }
+      .cin {
+        font-family: "Cinzel", serif;
+      }
+      .cinzel {
+        font-family: "Cinzel Decorative", serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-slate-100 text-gray-900 antialiased nunito">
+    <!-- Navigation Bar -->
+    <header>
+      <nav
+        class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800"
+      >
+        <div
+          class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+        >
+          <a href="#" class="flex items-center cinzel text-slate-700">
+            <img src="images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+            <span
+              class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+              >Gamma</span
+            >
+          </a>
+          <div class="flex items-center lg:order-2">
+            <a
+              href="#"
+              class="text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-slate-600 dark:hover:bg-slate-700 focus:outline-none dark:focus:ring-slate-800"
+              >Get started</a
+            >
+            <button
+              data-collapse-toggle="mobile-menu-2"
+              type="button"
+              class="inline-flex items-center p-2 ml-1 text-sm text-slate-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="mobile-menu-2"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <img src="images/menu.svg" alt="opne menu" class="w-6 h-6" />
+              <img src="images/close.svg" alt="close menu" class="hidden w-6 h-6" />
+            </button>
+          </div>
+          <div
+            class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+            id="mobile-menu-2"
+          >
+            <ul
+              class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+            >
+              <li>
+                <a
+                  href="#home"
+                  class="block py-2 pr-4 pl-3 text-white rounded bg-slate-700 lg:bg-transparent lg:text-slate-700 lg:p-0 dark:text-white"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-slate-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#features"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-slate-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#product"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-slate-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#testimonial"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-slate-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#team"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-slate-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Team</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-slate-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero Section -->
+
+    <header id="home">
+      <!-- Container -->
+      <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
+        <!-- Component -->
+        <div class="flex flex-col gap-8 sm:gap-20 lg:flex-row-reverse">
+          <div class="max-w-2xl lg:max-w-xl">
+            <!-- Title -->
+            <h1 class="mb-4 text-4xl font-bold md:text-6xl cin text-slate-700">
+              Experience the Joy of Seamless Travel with Your Family
+            </h1>
+            <p class="mb-6 max-w-lg text-sm text-slate-500 sm:text-xl lg:mb-8">
+              Gamma’s innovative offline app turns travel into a smooth, fun
+              adventure. With features designed for parents, you’ll enjoy every
+              moment without the stress of unreliable connections.
+            </p>
+            <!-- Button -->
+            <div class="mb-6 flex items-stretch md:mb-10 lg:mb-12">
+              <a
+                href="#"
+                class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-semibold rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800 flex flex-row items-center"
+              >
+                <p>Discover Gamma</p>
+                <i
+                  class="fa-brands fa-searchengin ml-2 inline-block text-xl"
+                ></i>
+              </a>
+              <a
+                href="#"
+                class="flex flex-row items-center text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:ring-slate-300 font-semibold rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-slate-600 dark:hover:bg-slate-700 focus:outline-none dark:focus:ring-slate-800"
+              >
+                <p>Follow Us for Travel Tips</p>
+              </a>
+            </div>
+            <!-- Info -->
+            <ul class="flex items-center gap-4 text-slate-700">
+              <li class="mr-16">
+                <h3
+                  class="text-2xl font-bold md:text-3xl flex flex-row items-center"
+                >
+                  5.0
+                </h3>
+                <p class="text-xs text-slate-500">
+                  <i class="fa-solid fa-star text-xs"></i
+                  ><i class="fa-solid fa-star text-xs ml-2"></i
+                  ><i class="fa-solid fa-star text-xs ml-2"></i
+                  ><i class="fa-solid fa-star text-xs ml-2"></i
+                  ><i class="fa-solid fa-star text-xs ml-2"></i>
+                </p>
+                <p class="text-sm text-slate-500">Rating</p>
+              </li>
+              <li class="mr-16">
+                <h3 class="text-2xl font-bold md:text-3xl">67K+</h3>
+                <p class="text-sm text-slate-500">Downloads</p>
+              </li>
+              <li class="mr-16">
+                <h3 class="text-2xl font-bold md:text-3xl">1M+</h3>
+                <p class="text-sm text-slate-500">Active Users</p>
+              </li>
+            </ul>
+          </div>
+          <!-- Hero Image -->
+          <div>
+            <img
+              src="images/hero.jpg"
+              alt=""
+              class="h-full w-full max-w-2xl rounded-xl object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- About Section -->
+
+    <section id="about">
+      <!-- Container -->
+      <div
+        class="mx-auto w-full max-w-7xl px-5 py-12 md:px-10 md:py-16 lg:py-20"
+      >
+        <!-- Component -->
+        <div class="grid gap-12 sm:gap-20 lg:grid-cols-2">
+          <!-- Content -->
+          <div class="flex flex-col items-start gap-2">
+            <div class="flex items-center rounded-md bg-gray-300 px-3 py-1">
+              <div class="mr-1 h-2 w-2 rounded-full bg-black"></div>
+              <p class="text-sm cin">About Us</p>
+            </div>
+            <p class="text-sm text-gray-500 sm:text-xl">
+              Your Trusted Companion for Family Adventures
+            </p>
+            <!-- Title -->
+            <h1
+              class="mb-6 text-4xl font-bold md:text-6xl lg:mb-8 cin text-slate-700"
+            >
+              Our Journey to Revolutionize Family Travel
+            </h1>
+            <p class="text-sm text-gray-500 sm:text-xl">
+              Gamma was founded with a simple mission: to make family travel
+              stress-free and enjoyable. As parents ourselves, we understand the
+              challenges of keeping everyone happy and connected on the road.
+              That’s why we created an app that blends the reliability of
+              traditional travel guides with the innovation of modern
+              technology.
+            </p>
+            <!-- Divider -->
+            <div class="mb-8 mt-8 h-px w-full bg-black"></div>
+            <div
+              class="mb-6 flex flex-col gap-2 text-sm text-gray-500 sm:text-base lg:mb-8"
+            >
+              <h3 class="text-xl font-bold mt-4 text-slate-700 cin">
+                What Sets Us Apart
+              </h3>
+              <p>
+                <strong class="text-slate-700 cin">Faithfulness: </strong>Our
+                commitment to reliability means you can always count on Gamma,
+                even when you’re offline.
+              </p>
+              <p>
+                <strong class="text-slate-700 cin">Innovation: </strong>We
+                continuously improve and add new features, ensuring our app
+                remains at the cutting edge of travel technology.
+              </p>
+              <p>
+                <strong class="text-slate-700 cin">Community: </strong>As an
+                open-source platform, we value collaboration and welcome
+                feedback from our users to help us grow together.
+              </p>
+            </div>
+            <!-- Link -->
+            <p class="mb-6 max-w-lg text-sm text-slate-500 sm:text-xs lg:mb-8">
+              At Gamma, we’re more than just an app—we’re your trusted partner
+              in creating unforgettable family memories. Join us as we continue
+              to innovate and make travel easier for parents around the world
+            </p>
+          </div>
+          <!-- Image -->
+          <div class="min-h-[530px] overflow-hidden rounded-md bg-gray-100">
+            <img
+              src="images/about.jpg"
+              alt=""
+              class="h-full w-full max-w-2xl rounded-xl object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features Section -->
+
+    <section id="features">
+      <!-- Container -->
+      <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20 text-slate-700">
+        <!-- Title -->
+        <h2 class="items-center text-center text-3xl font-bold md:text-5xl cin">
+          Why Families Love Gamma
+        </h2>
+        <p
+          class="mx-auto mb-8 mt-4 max-w-lg text-center text-sm text-gray-500 sm:text-base md:mb-12"
+        >
+          With Gamma, family travel is not just easier, it’s better. Our
+          features are built to enhance your journey, making every trip a
+          memorable experience.
+        </p>
+        <!-- List -->
+        <ul class="grid gap-5 sm:grid-cols-2 md:grid-cols-4 md:gap-0">
+          <li
+            class="flex flex-col items-center gap-2 md:border-r md:px-10 md:py-4 p-8 md:border-gray-300"
+          >
+            <img
+              src="images/offline.svg"
+              alt=""
+              class="inline-block h-16 w-16 rounded-full object-cover"
+            />
+
+            <p class="text-md uppercase font-semibold cin">Offline Usability</p>
+            <p class="text-center text-base text-gray-700">
+              Stay Connected, Even Offline
+            </p>
+            <p class="text-center text-sm text-gray-500">
+              No internet? No problem. Gamma’s app is designed to work
+              flawlessly without a connection, ensuring you have access to maps,
+              travel guides, and entertainment wherever you go.
+            </p>
+          </li>
+
+          <li
+            class="flex flex-col items-center gap-2 md:border-r md:px-10 md:py-4 p-8 md:border-gray-300"
+          >
+            <img
+              src="images/creative.svg"
+              alt=""
+              class="inline-block h-16 w-16 rounded-full object-cover"
+            />
+
+            <p class="text-md uppercase font-semibold cin">Creative Techniques</p>
+            <p class="text-center text-base text-gray-700">
+              Engage and Entertain
+            </p>
+            <p class="text-center text-sm text-gray-500">
+              Keep the whole family engaged with interactive maps, fun travel
+              games, and creative activities. Gamma turns every journey into an
+              exciting adventure.
+            </p>
+          </li>
+          <li
+            class="flex flex-col items-center gap-2 md:border-r md:px-10 md:py-4 p-8 md:border-gray-300"
+          >
+            <img
+              src="images/parent.svg"
+              alt=""
+              class="inline-block h-16 w-16 rounded-full object-cover"
+            />
+
+            <p class="text-md uppercase font-semibold cin">Parent-Centric Design</p>
+            <p class="text-center text-base text-gray-700">
+              Designed with Parents in Mind
+            </p>
+            <p class="text-center text-sm text-gray-500">
+              We know what parents need on the road. Gamma offers an intuitive
+              interface that’s easy to navigate, with features like
+              child-friendly content and safety tips tailored for family travel.
+            </p>
+          </li>
+          <li
+            class="flex flex-col items-center gap-2 md:px-10 md:py-4 p-8 md:border-gray-300"
+          >
+            <img
+              src="images/update.svg"
+              alt=""
+              class="inline-block h-16 w-16 rounded-full object-cover"
+            />
+
+            <p class="text-md uppercase font-semibold cin">Real-Time Updates</p>
+            <p class="text-center text-base text-gray-700">Real-Time Updates</p>
+            <p class="text-center text-sm text-gray-500">
+              Get the latest updates on your destination, from weather alerts to
+              local events, all synced automatically when you’re online.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="product">
+      <!-- Container -->
+      <div
+        class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32"
+      >
+        <div
+          class="mx-auto w-full max-w-7xl text-slate-700 bg-gray-100 px-4 py-32 text-center"
+        >
+          <!-- Title -->
+          <h2
+            class="mx-auto mb-6 max-w-3xl flex-col text-3xl font-bold md:mb-10 md:text-5xl lg:mb-12 cin"
+          >
+          Explore Our Innovative Travel App
+          </h2>
+          <ul
+            class=" mx-auto mb-8 flex flex-col items-center justify-center gap-5 sm:flex-row sm:gap-8 md:gap-10 lg:mb-12"
+          >
+            <li class="flex items-center">
+            
+              <i class="fa-solid fa-circle-check text-2xl mr-3 items-center"></i>
+              <p class="text-sm sm:text-base">Offline Travel Guides</p>
+            </li>
+            <li class="flex items-center">
+              <i class="fa-solid fa-circle-check text-2xl mr-3 items-center"></i>
+              <p class="text-sm sm:text-base">Interactive Maps</p>
+            </li>
+            <li class="flex items-center">
+              <i class="fa-solid fa-circle-check text-2xl mr-3 items-center"></i>
+              <p class="text-sm sm:text-base">Family-Friendly Entertainment</p>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-slate-600 dark:hover:bg-slate-700 focus:outline-none dark:focus:ring-slate-800"
+            >Download Now and Start Your Adventure</a>
+         
+        </div>
+        <!-- Component -->
+        <div class="relative pt-48">
+          <!-- Item -->
+          <div
+            class="sticky top-12 -mt-48 mb-48 grid gap-8 rounded-xl bg-slate-50 px-5 py-10 sm:px-12 lg:grid-cols-2 lg:gap-20"
+          >
+            <div class="max-w-3xl lg:flex text-slate-700 lg:flex-col lg:justify-between">
+              <p class="hidden text-2xl font-bold lg:block cin">
+                Offline Travel Guides
+              </p>
+              <div>
+                <h2 class="mb-4 text-3xl font-bold md:text-5xl lg:mb-10 cin">
+                  Comprehensive Travel Guides
+                </h2>
+                <p class="max-w-md text-sm text-slate-400 sm:text-base">
+                  Access detailed travel guides and maps without needing an
+                  internet connection. Our offline guides include essential
+                  information on attractions, dining, and accommodations,
+                  ensuring you’re always informed.
+                </p>
+              </div>
+            </div>
+            <div class="flex h-[480px] w-full items-center justify-center">
+              <img
+                src="images/hero.jpg"
+                alt=""
+                class="h-full w-full max-w-2xl rounded-xl object-cover"
+              />
+            </div>
+          </div>
+          <!-- Item -->
+          <div
+            class="sticky top-36 -mt-24 mb-24 grid gap-8 rounded-xl bg-slate-200 px-5 py-10 sm:px-12 lg:grid-cols-2 lg:gap-20"
+          >
+            <div class="max-w-3xl lg:flex text-slate-700 lg:flex-col lg:justify-between">
+              <p class="hidden text-2xl font-bold lg:block cin">Interactive Maps</p>
+              <div>
+                <h2 class="mb-4 text-3xl font-bold md:text-5xl lg:mb-10 cin">
+                  Interactive and Fun Maps
+                </h2>
+                <p class="max-w-md text-sm text-slate-400 sm:text-base">
+                  Navigate new destinations with ease using our interactive
+                  maps. With real-time updates and engaging features, you’ll
+                  never miss out on the best spots and hidden gems.
+                </p>
+              </div>
+            </div>
+            <div class="flex h-[480px] w-full items-center justify-center">
+              <img
+                src="images/hero.jpg"
+                alt=""
+                class="h-full w-full max-w-2xl rounded-xl object-cover"
+              />
+            </div>
+          </div>
+          <!-- Item -->
+          <div
+            class="sticky top-48 grid gap-8 rounded-xl bg-slate-300 px-5 py-10 sm:px-12 lg:grid-cols-2 lg:gap-20"
+          >
+            <div class="max-w-3xl lg:flex text-slate-700 lg:flex-col lg:justify-between">
+              <p class="hidden text-2xl font-bold lg:block cin">
+                Family-Friendly Entertainment
+              </p>
+              <div>
+                <h2 class="mb-4 text-3xl font-bold md:text-5xl lg:mb-10 cin">
+                  Engaging Activities for Kids
+                </h2>
+                <p class="max-w-md text-sm text-slate-400 sm:text-base">
+                  Keep your children entertained with a variety of travel-themed
+                  games and activities. Our app offers educational and fun
+                  content that makes the journey enjoyable for the whole family.
+                </p>
+              </div>
+            </div>
+            <div class="flex h-[480px] w-full items-center justify-center">
+              <img
+                src="images/hero.jpg"
+                alt=""
+                class="h-full w-full max-w-2xl rounded-xl object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Container -->
+    </section>
+
+<!-- Testimonial Section -->
+<section id="testimonial">
+    <!-- Container -->
+    <div class="mx-auto text-slate-700 max-w-7xl px-5 py-16 md:px-10 md:py-20">
+      <!-- Heading -->
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 class="mb-8 text-3xl font-bold md:mb-12 md:text-5xl lg:mb-16 cin">See What Families Are Saying About Gamma </h2>
+      </div>
+      <!-- Contents -->
+      <div class="mb-5 grid grid-cols-1 gap-5 sm:grid-cols-2 md:mb-6 md:grid-cols-3 lg:mb-8">
+        <!-- Content 1 -->
+        <div class="grid grid-cols-1 gap-6 rounded-md border border-solid border-gray-300 bg-white p-8 md:p-10">
+      
+          <p class="text-gray-500"> “Gamma has transformed our travel experience. No more lost connections or bored kids—it's a lifesaver!" </p>
+          <div class="flex flex-row items-start items-center">
+            <img src="https://plus.unsplash.com/premium_photo-1689266188052-704d33673e69?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d29tYW58ZW58MHx8MHx8fDA%3D" alt="" class="mr-4 inline-block h-8 w-8 object-cover rounded-full" />
+            <div class="flex flex-col items-start">
+              <h6 class="text-base font-bold cin">Jane M.</h6>
+              <p class="text-sm text-gray-500">Mother of Two</p>
+            </div>
+          </div>
+        </div>
+        <!-- Content 2 -->
+        <div class="grid grid-cols-1 gap-6 rounded-md border border-solid border-gray-300 bg-white p-8 md:p-10">
+         
+          <p class="text-gray-500">"The offline features are a game changer. I feel secure knowing I have all the information I need, even in remote areas." </p>
+          <div class="flex flex-row items-start items-center">
+            <img src="https://images.unsplash.com/photo-1676972437013-c86eca9b0daa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1hbiUyMHBvcnRyYWl0fGVufDB8fDB8fHww" alt="" class="mr-4 inline-block h-8 w-8 object-cover rounded-full" />
+            <div class="flex flex-col items-start">
+              <h6 class="text-base font-bold cin"> John D.</h6>
+              <p class="text-sm text-gray-500">Father of Three</p>
+            </div>
+          </div>
+        </div>
+        <!-- Content 3 -->
+        <div class="grid grid-cols-1 gap-6 rounded-md border border-solid border-gray-300 bg-white p-8 md:p-10">
+         
+          <p class="text-gray-500"> "The combination of innovation and simplicity makes Gamma a must-have for any family that loves to explore." </p>
+          <div class="flex flex-row items-start items-center">
+            <img src="https://images.unsplash.com/photo-1557053908-4793c484d06f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d29tYW4lMjBwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D" alt="" class="mr-4 inline-block h-8 w-8 object-cover rounded-full" />
+            <div class="flex flex-col items-start">
+              <h6 class="text-base font-bold cin">Sarah L.</h6>
+              <p class="text-sm text-gray-500">Travel Blogger</p>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+    </div>
+  </section>
+
+
+
+<!-- Team Section -->
+
+<section id="team">
+  <!-- Container -->
+  <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20 text-slate-700">
+    <!-- Title -->
+    <h2 class="text-center text-3xl font-bold md:text-5xl cin"> Our Team Members </h2>
+    <p class="mx-auto mb-8 mt-4 text-center text-sm text-gray-500 sm:text-base md:mb-12 lg:mb-16"> Lorem ipsum dolor sit amet elit ut aliquam </p>
+    <!-- Content -->
+    <div class="grid grid-cols-1 justify-items-center gap-5 sm:grid-cols-2 sm:justify-items-stretch md:grid-cols-3 md:gap-4 lg:gap-6">
+      <!-- Item -->
+      <div class="mx-auto flex w-full flex-col items-center gap-4 py-8 text-center md:px-8 md:py-4 lg:px-12">
+        <img src="https://images.unsplash.com/photo-1676972437013-c86eca9b0daa?q=80&w=1665&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="mb-4 inline-block h-40 w-40 rounded-full object-cover" />
+        <p class="font-bold cin">John Robert</p>
+        <p class="text-center text-sm text-gray-500"> Webflow Developer </p>
+        <div class="mt-4 flex">
+          <a href="#" class="mr-2 inline-block h-8 w-8 max-w-full text-slate-700 hover:text-slate-400">
+            <i class="fa-brands fa-square-x-twitter inline-block text-2xl"></i>
+          </a>
+          <a href="#" class="mr-2 inline-block h-8 w-8 max-w-full text-slate-700 hover:text-slate-400">
+            <i class="fa-brands fa-facebook inline-block text-2xl"></i>
+          </a>
+          <a href="#" class="inline-block h-8 w-8 max-w-full text-slate-700 hover:text-slate-400">
+            <i class="fa-brands fa-linkedin inline-block text-2xl"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Item -->
+      <div class="mx-auto flex w-full flex-col items-center gap-4 py-8 text-center md:px-8 md:py-4 lg:px-12">
+        <img src="https://images.unsplash.com/photo-1714943641718-2f8d80a20d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fG1hbiUyMHBvcnRyYWl0fGVufDB8fDB8fHww" alt="" class="mb-4 inline-block h-40 w-40 rounded-full object-cover " />
+        <p class="font-bold cin">Annisyah Matah</p>
+        <p class="text-center text-sm text-gray-500"> Webflow Developer </p>
+        <div class="mt-4 flex">
+          <a href="#" class="mr-2 inline-block h-8 w-8 max-w-full text-slate-700 hover:text-slate-400">
+            <i class="fa-brands fa-square-x-twitter inline-block text-2xl"></i>
+          </a>
+          <a href="#" class="mr-2 inline-block h-8 w-8 max-w-full text-slate-700 hover:text-slate-400">
+            <i class="fa-brands fa-facebook inline-block text-2xl"></i>
+          </a>
+          <a href="#" class="inline-block h-8 w-8 max-w-full text-slate-700 hover:text-slate-400">
+            <i class="fa-brands fa-linkedin inline-block text-2xl"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Item -->
+      <div class="mx-auto flex w-full flex-col items-center gap-4 py-8 text-center md:px-8 md:py-4 lg:px-12">
+        <img src="https://images.unsplash.com/photo-1706911996174-3a8722823730?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D" alt="" class="mb-4 inline-block h-40 w-40 rounded-full object-cover" />
+        <p class="font-bold cin">Tamara Lind</p>
+        <p class="text-center text-sm text-gray-500"> UI//UX&nbsp;Designer </p>
+        <div class="mt-4 flex">
+          <a href="#" class="mr-2 inline-block h-8 w-8 max-w-full text-slate-700 hover:text-slate-400">
+            <i class="fa-brands fa-square-x-twitter inline-block text-2xl"></i>
+          </a>
+          <a href="#" class="mr-2 inline-block h-8 w-8 max-w-full text-slate-700 hover:text-slate-400">
+            <i class="fa-brands fa-facebook inline-block text-2xl"></i>
+          </a>
+          <a href="#" class="inline-block h-8 w-8 max-w-full text-slate-700 hover:text-slate-400">
+            <i class="fa-brands fa-linkedin inline-block text-2xl"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Item -->
+      <div class="mx-auto flex w-full flex-col items-center gap-4 py-8 text-center md:px-8 md:py-4 lg:px-12">
+        <img src="https://images.unsplash.com/flagged/photo-1576012886127-411fc2d3f141?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d29tZW4lMjBwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D" alt="" class="mb-4 inline-block h-40 w-40 rounded-full object-cover" />
+        <p class="font-bold cin">Kevin Mason</p>
+        <p class="text-center text-sm text-gray-500">Product Manager</p>
+        <div class="mt-4 flex">
+          <a href="#" class="mr-2 inline-block h-8 w-8 max-w-full text-slate-700 hover:text-slate-400">
+            <i class="fa-brands fa-square-x-twitter inline-block text-2xl"></i>
+          </a>
+          <a href="#" class="mr-2 inline-block h-8 w-8 max-w-full text-slate-700 hover:text-slate-400">
+            <i class="fa-brands fa-facebook inline-block text-2xl"></i>
+          </a>
+          <a href="#" class="inline-block h-8 w-8 max-w-full text-slate-700 hover:text-slate-400">
+            <i class="fa-brands fa-linkedin inline-block text-2xl"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Item -->
+      <div class="mx-auto flex w-full flex-col items-center gap-4 py-8 text-center md:px-8 md:py-4 lg:px-12">
+        <img src="https://images.unsplash.com/photo-1662577066108-4bb081e818b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdvbWVuJTIwcG9ydHJhaXR8ZW58MHx8MHx8fDA%3D" alt="" class="mb-4 inline-block h-40 w-40 rounded-full object-cover" />
+        <p class="font-bold cin">Amy Parker</p>
+        <p class="text-center text-sm text-gray-500"> Webflow Developer </p>
+        <div class="mt-4 flex">
+          <a href="#" class="mr-2 inline-block h-8 w-8 max-w-full text-slate-700 hover:text-slate-400">
+            <i class="fa-brands fa-square-x-twitter inline-block text-2xl"></i>
+          </a>
+          <a href="#" class="mr-2 inline-block h-8 w-8 max-w-full text-slate-700 hover:text-slate-400">
+            <i class="fa-brands fa-facebook inline-block text-2xl"></i>
+          </a>
+          <a href="#" class="inline-block h-8 w-8 max-w-full text-slate-700 hover:text-slate-400">
+            <i class="fa-brands fa-linkedin inline-block text-2xl"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Item -->
+      <div class="mx-auto flex w-full flex-col items-center gap-4 py-8 text-center md:px-8 md:py-4 lg:px-12">
+        <img src="https://images.unsplash.com/photo-1620831337843-a8b829ae9034?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHdvbWVuJTIwcG9ydHJhaXR8ZW58MHx8MHx8fDA%3D" alt="" class="mb-4 inline-block h-40 w-40 rounded-full object-cover" />
+        <p class="font-bold cin">Ben Watson</p>
+        <p class="text-center text-sm text-gray-500">CEO</p>
+        <div class="mt-4 flex">
+          <a href="#" class="mr-2 inline-block h-8 w-8 max-w-full text-slate-700 hover:text-slate-400">
+            <i class="fa-brands fa-square-x-twitter inline-block text-2xl"></i>
+          </a>
+          <a href="#" class="mr-2 inline-block h-8 w-8 max-w-full text-slate-700 hover:text-slate-400">
+            <i class="fa-brands fa-facebook inline-block text-2xl"></i>
+          </a>
+          <a href="#" class="inline-block h-8 w-8 max-w-full text-slate-700 hover:text-slate-400">
+            <i class="fa-brands fa-linkedin inline-block text-2xl"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Contact Section -->
+ 
+<section id="contact">
+  <!-- Container -->
+  <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20 text-slate-700">
+    <!-- Component -->
+    <div class="grid items-center gap-8 sm:gap-20 lg:grid-cols-2">
+      <div class="max-w-3xl">
+        <!-- Title -->
+        <h2 class="mb-2 text-3xl font-bold md:text-5xl cin"> Get in Touch with Us </h2>
+        <p class="my-4 max-w-lg pb-4 text-sm text-gray-500 sm:text-base md:mb-6 lg:mb-8">We’re here to help you with any questions, feedback, or support you may need. Whether you have inquiries about Gamma, need assistance with our app, or just want to say hello, don’t hesitate to reach out. Our team is eager to hear from you and provide the assistance you need. </p>
+      
+        <p class="mb-8 max-w-lg text-sm text-gray-500 sm:text-base"> Thank you for reaching out to Gamma. We look forward to assisting you and making your travel experiences even better.</p>
+        <div class="flex items-center">
+          <img src="https://images.unsplash.com/photo-1660152988640-99bcdecf2bc5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdvbWVuJTIwcG9ydHJhaXR8ZW58MHx8MHx8fDA%3D" alt="" class="mr-4 inline-block h-8 w-8 items-center rounded-full object-cover" />
+          <div class="flex flex-col">
+            <h6 class="text-base font-bold">Laila Bahar</h6>
+            <p class="text-sm text-gray-500">Designer</p>
+          </div>
+        </div>
+        <div class="mt-8 grid-cols-4 grid-flow-col grid w-full max-w-52 gap-3">
+          <a href="#" class="mx-auto flex-col flex max-w-6 items-center justify-center text-slate-700 hover:text-slate-400">
+          
+          <i class="fa-brands fa-facebook inline-block"></i>
+          </a>
+          <a href="#" class="mx-auto flex-col flex max-w-6 items-center justify-center text-slate-700 hover:text-slate-400">
+            <i class="fa-brands fa-square-x-twitter inline-block"></i> 
+          </a>
+          <a href="#" class="mx-auto flex-col flex max-w-6 items-center justify-center text-slate-700 hover:text-slate-400">
+            <i class="fa-brands fa-instagram inline-block" ></i>
+          </a>
+          <a href="#" class="mx-auto flex-col flex max-w-6 items-center justify-center text-slate-700 hover:text-slate-400">
+            <i class="fa-brands fa-tiktok inline-block"></i>
+          </a>
+        </div>
+      </div>
+      <div class="mx-auto max-w-xl bg-slate-200 rounded-lg p-8 text-center">
+        <h3 class="text-2xl font-bold md:text-3xl cin">Get a free quote</h3>
+        <p class="mx-auto mb-6 mt-4 max-w-lg text-sm text-gray-500 lg:mb-8"> Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam,purus sit amet luctus magna fringilla urna </p>
+        <!-- Form -->
+        <form class="mx-auto mb-4 max-w-sm text-left" name="wf-form-password" method="get">
+          <div>
+            <label htmlFor="name-2" class="mb-1 font-medium"> Your Name </label>
+            <input type="text" class="mb-4 block h-9 w-full rounded-md border-2 border-solid border-slate-600 bg-slate-100 px-3 py-6 pl-4 text-sm text-slate-700" />
+          </div>
+          <div class="mb-2">
+            <label htmlFor="name-2" class="mb-1 font-medium"> Email Address </label>
+            <input type="text" class="mb-4 block h-9 w-full rounded-md border-2 border-solid border-slate-600 bg-slate-100 px-3 py-6 pl-4 text-sm text-slate-700" />
+          </div>
+          <div class="mb-5 md:mb-6 lg:mb-8">
+            <label htmlFor="field-3" class="mb-1 font-medium"> Project Brief </label>
+            <textarea placeholder="" maxLength="5000" name="field" class="mb-2.5 block h-auto min-h-32 w-full rounded-md bg-slate-100 border-2 border-solid border-slate-600 p-3 text-sm text-slate-700"></textarea>
+          </div>
+        
+          <input type="submit" value="Get free quote" class="inline-block w-full cursor-pointer  text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:ring-slate-300 font-semibold rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-slate-600 dark:hover:bg-slate-700 focus:outline-none dark:focus:ring-slate-800" />
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    
+<footer class="block bg-slate-700 text-slate-200">
+  <!-- Container -->
+  <div class="py-16 md:py-20 mx-auto w-full max-w-7xl px-5 md:px-10">
+    <!-- Component -->
+    <div class="flex-col flex items-center">
+     
+      <a href="#" class="flex mb-8 inline-block max-w-full items-center cinzel text-slate-200">
+        <img src="images/whitelogo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+        <span
+          class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+          >Gamma</span
+        >
+      </a>
+      <div class="text-center font-semibold">
+        <a href="#" class="inline-block px-6 py-2 font-normal text-slate-200 transition hover:text-slate-400"> About </a>
+        <a href="#" class="inline-block px-6 py-2 font-normal text-slate-200 transition hover:text-slate-400"> Features </a>
+        <a href="#" class="inline-block px-6 py-2 font-normal text-slate-200 transition hover:text-slate-400"> Works </a>
+        <a href="#" class="inline-block px-6 py-2 font-normal text-slate-200 transition hover:text-slate-400"> Support </a>
+        <a href="#" class="inline-block px-6 py-2 font-normal text-slate-200 transition hover:text-slate-400"> Help </a>
+      </div>
+      <div class="mb-8 mt-8 border-b border-gray-300 w-48"></div>
+      <div class="mb-12 grid-cols-4 grid-flow-col grid w-full max-w-52 gap-3">
+        <a href="#" class="mx-auto flex-col flex max-w-6 items-center justify-center text-slate-200 hover:text-slate-400">
+        
+        <i class="fa-brands fa-facebook inline-block"></i>
+        </a>
+        <a href="#" class="mx-auto flex-col flex max-w-6 items-center justify-center text-slate-200 hover:text-slate-400">
+          <i class="fa-brands fa-square-x-twitter inline-block"></i> 
+        </a>
+        <a href="#" class="mx-auto flex-col flex max-w-6 items-center justify-center text-slate-200 hover:text-slate-400">
+          <i class="fa-brands fa-instagram inline-block" ></i>
+        </a>
+        <a href="#" class="mx-auto flex-col flex max-w-6 items-center justify-center text-slate-200 hover:text-slate-400">
+          <i class="fa-brands fa-tiktok inline-block"></i>
+        </a>
+      </div>
+      <p class="text-sm sm:text-base"> © Copyright 2021. All rights reserved. </p>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>
